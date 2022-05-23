@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="data">
+    <file>res/backspace-arrow.png</file>
+    <file>res/divide.png</file>
+  </qresource>
+</RCC>
