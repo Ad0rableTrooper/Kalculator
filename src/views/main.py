@@ -8,7 +8,7 @@ class Ui_MainWindow(object):
                 MainWindow.setStyleSheet("background-color: #000000;")
                 self.centralwidget = QtWidgets.QWidget(MainWindow)
                 self.centralwidget.setObjectName("centralwidget")
-                self.one = QtWidgets.QPushButton(self.centralwidget)
+                self.one = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("1"))
                 self.one.setGeometry(QtCore.QRect(30, 500, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -21,7 +21,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.one.setObjectName("one")
-                self.six = QtWidgets.QPushButton(self.centralwidget)
+                self.six = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("6"))
                 self.six.setGeometry(QtCore.QRect(270, 410, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -34,7 +34,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.six.setObjectName("six")
-                self.div = QtWidgets.QPushButton(self.centralwidget)
+                self.div = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("/"))
                 self.div.setGeometry(QtCore.QRect(150, 230, 93, 71))
                 self.div.setStyleSheet("QPushButton#div{\n"
 "    image: url(:/data/res/divide.png);\n"
@@ -45,7 +45,7 @@ class Ui_MainWindow(object):
 "}")
                 self.div.setText("")
                 self.div.setObjectName("div")
-                self.five = QtWidgets.QPushButton(self.centralwidget)
+                self.five = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("5"))
                 self.five.setGeometry(QtCore.QRect(150, 410, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.five.setObjectName("five")
-                self.clear = QtWidgets.QPushButton(self.centralwidget)
+                self.clear = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("C"))
                 self.clear.setGeometry(QtCore.QRect(30, 230, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -72,7 +72,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.clear.setObjectName("clear")
-                self.two = QtWidgets.QPushButton(self.centralwidget)
+                self.two = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("2"))
                 self.two.setGeometry(QtCore.QRect(150, 500, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -85,7 +85,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.two.setObjectName("two")
-                self.four = QtWidgets.QPushButton(self.centralwidget)
+                self.four = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("4"))
                 self.four.setGeometry(QtCore.QRect(30, 410, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -98,7 +98,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.four.setObjectName("four")
-                self.three = QtWidgets.QPushButton(self.centralwidget)
+                self.three = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("3"))
                 self.three.setGeometry(QtCore.QRect(270, 500, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -111,7 +111,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.three.setObjectName("three")
-                self.zero = QtWidgets.QPushButton(self.centralwidget)
+                self.zero = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("0"))
                 self.zero.setGeometry(QtCore.QRect(150, 590, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -124,7 +124,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.zero.setObjectName("zero")
-                self.equals = QtWidgets.QPushButton(self.centralwidget)
+                self.equals = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.ans())
                 self.equals.setGeometry(QtCore.QRect(385, 490, 101, 181))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -139,7 +139,7 @@ class Ui_MainWindow(object):
 "    background-color: #000000;\n"
 "}")
                 self.equals.setObjectName("equals")
-                self.mod = QtWidgets.QPushButton(self.centralwidget)
+                self.mod = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("%"))
                 self.mod.setGeometry(QtCore.QRect(30, 590, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -152,7 +152,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.mod.setObjectName("mod")
-                self.deci = QtWidgets.QPushButton(self.centralwidget)
+                self.deci = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.dot_it())
                 self.deci.setGeometry(QtCore.QRect(270, 590, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -165,7 +165,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.deci.setObjectName("deci")
-                self.mul = QtWidgets.QPushButton(self.centralwidget)
+                self.mul = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("*"))
                 self.mul.setGeometry(QtCore.QRect(270, 230, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -178,7 +178,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.mul.setObjectName("mul")
-                self.delete_2 = QtWidgets.QPushButton(self.centralwidget)
+                self.delete_2 = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.remove_it())
                 self.delete_2.setGeometry(QtCore.QRect(390, 230, 93, 71))
                 self.delete_2.setStyleSheet("QPushButton#delete_2{\n"
 "    image: url(:/data/res/backspace-arrow.png);\n"
@@ -189,7 +189,7 @@ class Ui_MainWindow(object):
 "}")
                 self.delete_2.setText("")
                 self.delete_2.setObjectName("delete_2")
-                self.add = QtWidgets.QPushButton(self.centralwidget)
+                self.add = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("+"))
                 self.add.setGeometry(QtCore.QRect(390, 410, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -202,7 +202,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.add.setObjectName("add")
-                self.seven = QtWidgets.QPushButton(self.centralwidget)
+                self.seven = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("7"))
                 self.seven.setGeometry(QtCore.QRect(30, 320, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -215,7 +215,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.seven.setObjectName("seven")
-                self.nine = QtWidgets.QPushButton(self.centralwidget)
+                self.nine = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("9"))
                 self.nine.setGeometry(QtCore.QRect(270, 320, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -228,7 +228,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;\n"
 "}")
                 self.nine.setObjectName("nine")
-                self.sub = QtWidgets.QPushButton(self.centralwidget)
+                self.sub = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("-"))
                 self.sub.setGeometry(QtCore.QRect(390, 320, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -241,7 +241,7 @@ class Ui_MainWindow(object):
 "    background-color: #EEEEEE;    \n"
 "}")
                 self.sub.setObjectName("sub")
-                self.eight = QtWidgets.QPushButton(self.centralwidget)
+                self.eight = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.press_it("8"))
                 self.eight.setGeometry(QtCore.QRect(150, 320, 93, 71))
                 font = QtGui.QFont()
                 font.setPointSize(40)
@@ -284,6 +284,33 @@ class Ui_MainWindow(object):
                 self.retranslateUi(MainWindow)
                 QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        def ans(self):
+                try:
+                        data = self.screen.text()
+                        answer = eval(data)
+                        self.screen.setText(str(answer))
+                except:
+                        self.screen.setText("ERROR")
+
+        def remove_it(self):
+                self.screen.setText(self.screen.text()[:-1])
+
+        def dot_it(self):
+                screen1 = self.screen.text()
+
+                if screen1[-1] == ".":
+                        pass
+                else:
+                        self.screen.setText(f'{screen1}.')
+
+        def press_it(self, pressed):
+                if pressed == 'C':
+                        self.screen.setText("0")
+                else:
+                        if self.screen.text() == "0":
+                                self.screen.setText("")
+                        self.screen.setText(f"{self.screen.text()}{pressed}")
+
         def retranslateUi(self, MainWindow):
                 _translate = QtCore.QCoreApplication.translate
                 MainWindow.setWindowTitle(_translate("MainWindow", "Kalculator"))
@@ -324,110 +351,6 @@ class Ui_MainWindow(object):
                 self.eight.setShortcut(_translate("MainWindow", "8"))
                 self.info.setShortcut(_translate("MainWindow", "Ctrl+I"))
                 
-                def action_equal(self):
-                        equation = self.screen.text()
-                        try:
-                                ans = eval(equation)
-                                self.screen.setText(str(ans))
-  
-                        except:
-            
-                                self.screen.setText("Wrong Input")
-  
-                def action_plus(self):
-
-                        text = self.screen.text()
-                        self.screen.setText(text + " + ")
-  
-                def action_minus(self):
-
-                        text = self.screen.text()
-                        self.screen.setText(text + " - ")
-  
-                def action_div(self):
-
-                        text = self.screen.text()
-                        self.screen.setText(text + " / ")
-  
-                def action_mul(self):
-        
-                        text = self.screen.text()
-                        self.screen.setText(text + " * ")
-  
-                def action_point(self):
-        
-                        text = self.screen.text()
-                        self.screen.setText(text + ".")
-  
-                def action0(self):
-        
-                        text = self.screen.text()
-                        self.screen.setText(text + "0")
-  
-                def action1(self):
-        
-                        text = self.screen.text()
-                        self.screen.setText(text + "1")
-  
-                def action2(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "2")
-                
-                def action3(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "3")
-                
-                def action4(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "4")
-                
-                def action5(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "5")
-                
-                def action6(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "6")
-                
-                def action7(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "7")
-                
-                def action8(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "8")
-                
-                def action9(self):
-                        text = self.screen.text()
-                        self.screen.setText(text + "9")
-                
-                def action_clear(self):
-                        self.screen.setText("")
-                
-                def action_del(self):
-                        text = self.screen.text()
-                        print(text[:len(text)-1])
-                        self.screen.setText(text[:len(text)-1])
-
-
-                self.equals.clicked.connect(action_equal)
-                self.one.clicked.connect(action1)
-                self.two.clicked.connect(action2)
-                self.three.clicked.connect(action3)
-                self.four.clicked.connect(action4)
-                self.five.clicked.connect(action5)
-                self.six.clicked.connect(action6)
-                self.seven.clicked.connect(action7)
-                self.eight.clicked.connect(action8)
-                self.nine.clicked.connect(action9)
-                self.zero.clicked.connect(action0)
-                self.add.clicked.connect(action_plus)
-                self.sub.clicked.connect(action_minus)
-                self.mul.clicked.connect(action_mul)
-                self.div.clicked.connect(action_div)
-                self.deci.clicked.connect(action_point)
-                self.clear.clicked.connect(action_clear)
-                self.delete_2.clicked.connect(action_del)
 
                 
 
