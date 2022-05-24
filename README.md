@@ -1,1 +1,2 @@
 # Kalculator
+This file is left blank intentionally, lol
