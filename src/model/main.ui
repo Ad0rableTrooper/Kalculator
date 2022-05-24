@@ -38,7 +38,13 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#one{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#one:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>1</string>
@@ -62,7 +68,13 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#six{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#six:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>6</string>
@@ -111,7 +123,13 @@ QPushButton#div:pressed{
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#five{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#five:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>5</string>
@@ -168,7 +186,13 @@ QPushButton#clear:pressed{
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#two{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#two:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>2</string>
@@ -192,7 +216,13 @@ QPushButton#clear:pressed{
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#four{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#four:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>4</string>
@@ -216,7 +246,13 @@ QPushButton#clear:pressed{
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#three{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#three:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>3</string>
@@ -240,7 +276,13 @@ QPushButton#clear:pressed{
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#zero{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#zero:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>0</string>
@@ -267,6 +309,7 @@ QPushButton#clear:pressed{
      <string notr="true">QPushButton#equals {
 	background-color: #8E05C2;
 	color: #000000;
+	border-radius: 20px;
 }
 QPushButton#equals:pressed {
 	color: #8E05C2;
@@ -277,7 +320,7 @@ QPushButton#equals:pressed {
      <string>=</string>
     </property>
     <property name="shortcut">
-     <string>Return</string>
+     <string>Enter</string>
     </property>
    </widget>
    <widget class="QPushButton" name="mod">
@@ -295,7 +338,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#mod{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#mod:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>%</string>
@@ -316,7 +365,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#deci{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#deci:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>.</string>
@@ -340,7 +395,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#mul{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#mul:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>X</string>
@@ -359,7 +420,13 @@ QPushButton#equals:pressed {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/data/res/backspace-arrow.png);</string>
+     <string notr="true">QPushButton#delete_2{
+	image: url(:/data/res/backspace-arrow.png);
+	border-radius: 20px;
+}
+QPushButton#delete_2:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -383,7 +450,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#add{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#add:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>+</string>
@@ -407,7 +480,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#seven{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#seven:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>7</string>
@@ -431,7 +510,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#nine{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#nine:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>9</string>
@@ -455,7 +540,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#sub{
+	color: #8E05C2;	
+	border-radius: 20px;
+}
+QPushButton#sub:pressed{
+	background-color: #EEEEEE;	
+}</string>
     </property>
     <property name="text">
      <string>-</string>
@@ -479,7 +570,13 @@ QPushButton#equals:pressed {
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #8E05C2;</string>
+     <string notr="true">QPushButton#eight{
+	color: #8E05C2;
+	border-radius: 20px;
+}
+QPushButton#eight:pressed{
+	background-color: #EEEEEE;
+}</string>
     </property>
     <property name="text">
      <string>8</string>
@@ -516,6 +613,30 @@ QPushButton#equals:pressed {
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="info">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>20</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#info{
+	image: url(:/data/res/information.png);
+}
+QPushButton#info:pressed{
+	background-color: #EEEEEE;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+I</string>
     </property>
    </widget>
   </widget>
