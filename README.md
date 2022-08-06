@@ -1,2 +1,2 @@
 # Kalculator
-This file is left blank intentionally, lol
+Developer: Raif Salauddin Mondal aka Adorable Trooper.
